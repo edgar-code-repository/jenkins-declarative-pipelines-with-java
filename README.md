@@ -43,3 +43,21 @@ pipeline {
 ```
 
 -----------------------------------------------------------------------------------------------------------
+
+**Se crea pipeline en Jenkins:**
+
+![Screenshot Pipeline](screenshots/declarative_pipeline_skeleton.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Se configura pipeline para leer Jenkinfile desde un repositorio Git:**
+
+![Screenshot SCM](screenshots/pipeline_from_scm.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Stage view mostrado por Jenkins despues de ejecutar pipeline:**
+
+![Screenshot StageView](screenshots/pipeline_stage_view.png)
+
+-----------------------------------------------------------------------------------------------------------
