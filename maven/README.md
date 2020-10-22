@@ -1,3 +1,10 @@
+JENKINSFILE SKELETON
+---------------------------------------------------------------------------------------------------------
+
+**Se declara sección environment en Jenkinsfile incluyendo en variable PATH la ruta de Maven:**
+
+```
+
 pipeline {
     agent any
 
@@ -20,3 +27,7 @@ pipeline {
     }
 
 }
+
+```
+
+-----------------------------------------------------------------------------------------------------------
