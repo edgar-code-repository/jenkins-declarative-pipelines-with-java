@@ -10,7 +10,8 @@ pipeline {
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
-                    mvn -version
+                    ls -l /usr/share/maven/bin
+                    /usr/share/maven/bin/mvn -version
                 ''' 
             }
         }
