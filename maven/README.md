@@ -1,7 +1,7 @@
-JENKINSFILE SKELETON
+ENVIRONMENT SECTION
 ---------------------------------------------------------------------------------------------------------
 
-**Se declara sección environment en Jenkinsfile incluyendo en variable PATH la ruta de Maven:**
+**Se declara sección environment en Jenkinsfile incluyendo en variable PATH la ruta de Java 8 y Maven:**
 
 ```
 
@@ -17,8 +17,6 @@ pipeline {
             steps {
                 sh '''
                     echo "PATH = ${PATH}"
-                    ls -l /usr/share/maven/bin
-                    ls -l /usr/lib/jvm/jdk1.8.0_202/bin
                     java -version
                     mvn -version
                 ''' 
