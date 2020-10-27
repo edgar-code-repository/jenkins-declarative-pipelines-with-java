@@ -1,0 +1,35 @@
+pipeline {
+    agent any
+
+    environment {
+        PATH = "/usr/lib/jvm/jdk1.8.0_202/bin:/usr/share/maven/bin:${PATH}"
+    }
+
+    stages {
+        stage("Cloning Java App from Github") {
+            steps {
+                echo "Cloning Java App..."
+                git 'https://github.com/edgar-code-repository/spring-boot-countries-rest-api'
+            }
+        }
+
+        stage("Build Java App with Maven") {
+            steps {
+                echo "Building Java App..."
+                sh '''
+                    mvn -DskipTests clean package
+                '''
+            }
+        }
+
+        stage("Test Java App with Maven") {
+            steps {
+                echo "Testing Java App..."
+                sh '''
+                    mvn test
+                '''
+            }           
+        }
+    }
+
+}
