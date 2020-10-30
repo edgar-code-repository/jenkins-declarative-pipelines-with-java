@@ -29,3 +29,21 @@ pipeline {
 ```
 
 -----------------------------------------------------------------------------------------------------------
+
+**Se crea pipeline en Jenkins:**
+
+![Screenshot Pipeline](../screenshots/declarative_pipeline_environment.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Se configura pipeline para leer Jenkinfile desde un repositorio Git:**
+
+![Screenshot SCM](../screenshots/pipeline_from_script_environment.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Stage view mostrado por Jenkins despues de ejecutar pipeline:**
+
+![Screenshot StageView](../screenshots/stages_environment.png)
+
+-----------------------------------------------------------------------------------------------------------
