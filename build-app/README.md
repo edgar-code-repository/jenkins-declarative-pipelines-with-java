@@ -1,9 +1,7 @@
 BUILDING JAVA APP
 ---------------------------------------------------------------------------------------------------------
 
-**Se agregan stages para recuperar una aplicación Java desde un repositorio Git, 
-y luego construir y testear dicha aplicación utilizando Maven:**
-
+**Se agrega stage para recuperar una aplicación Java desde un repositorio Git:** 
 
 ```
 
@@ -13,6 +11,14 @@ y luego construir y testear dicha aplicación utilizando Maven:**
             git 'https://github.com/edgar-code-repository/spring-boot-countries-rest-api'
         }
     }
+
+```
+
+-----------------------------------------------------------------------------------------------------------
+
+**Se agregan stages para construir y testear la aplicación utilizando Maven:**
+
+```
 
     stage("Build Java App with Maven") {
         steps {
@@ -32,6 +38,25 @@ y luego construir y testear dicha aplicación utilizando Maven:**
         }           
     }
 
+
 ```
+
+-----------------------------------------------------------------------------------------------------------
+
+**Se crea pipeline en Jenkins:**
+
+![Screenshot Pipeline](../screenshots/declarative_pipeline_build_java_app.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Se configura pipeline para leer Jenkinfile desde un repositorio Git:**
+
+![Screenshot SCM](../screenshots/pipeline_from_scm_maven.png)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Stage view mostrado por Jenkins despues de ejecutar pipeline:**
+
+![Screenshot StageView](../screenshots/pipeline_build_app_stage_view.png)
 
 -----------------------------------------------------------------------------------------------------------
