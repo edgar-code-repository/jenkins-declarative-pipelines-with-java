@@ -51,7 +51,7 @@ BUILDING JAVA APP
 
 **Se configura pipeline para leer Jenkinfile desde un repositorio Git:**
 
-![Screenshot SCM](../screenshots/pipeline_from_scm_maven.png)
+![Screenshot SCM](../screenshots/pipeline_from_scm_build_java_app.png)
 
 -----------------------------------------------------------------------------------------------------------
 
