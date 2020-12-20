@@ -11,4 +11,6 @@ Ejemplos de uso de "declarative pipelines" en Jenkins.
 
 **3. [Building and Testing Java App](./build-app/README.md)**
 
+**4. [Sonarqube Configuration](./sonarqube/README-SONARQUBE-CONFIGURATION.md)**
+
 -----------------------------------------------------------------------------------------------------------
